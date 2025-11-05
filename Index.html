@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You 💕</title>
+  <style>
+    body {
+      margin:0;
+      padding:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+      background: linear-gradient(#ffe6f2,#ffd6e5);
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+    }
+    .card{
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 28px;
+      padding: 28px;
+      width:95%; max-width:430px;
+      text-align:center;
+      box-shadow:0 4px 20px rgba(0,0,0,0.07);
+    }
+    .msg{
+      font-size:20px; color:#d2336a; margin:16px 0;
+    }
+    .btn{
+      background:#ff4f91;
+      color:white;
+      padding:12px 20px;
+      margin:6px;
+      border-radius:20px;
+      border:none;
+      font-size:15px;
+      cursor:pointer;
+    }
+    .btn:active{transform:scale(.95);}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="main">i love you so much mera bacha ♥️💫, I'm here always</div>
+    <div class="from">—Your bby</div>
+    <button onclick="nextMsg()">tap me</button>
+  </div>
+  <script>
+    let msgs = [
+      "That's for you mera bacha 😘",
+      "No need to worry okie i am always here",
+      "Would love to be your peace",
+      "And no gussa, stress, tension okie"
+    ]
+    function nextMsg(){
+      const main = document.querySelector('.main')
+      main.innerText = msgs[Math.floor(Math.random()*msgs.length)]
+    }
+  </script><div class="extra" style="margin-top:20px;font-size:14px;opacity:.9;line-height:20px;">
+    • just be calm and relax<br>
+    • tiny chocolate bite<br>
+    • slowly inhale 4 sec → exhale 6 sec<br>
+    • and remember: I’m always your safe place
+</div>
+</body>
+</html>
